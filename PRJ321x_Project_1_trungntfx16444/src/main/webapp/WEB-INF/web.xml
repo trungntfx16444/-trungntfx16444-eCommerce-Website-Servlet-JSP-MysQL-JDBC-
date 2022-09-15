@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+	<display-name>PRJ321x_Project_1_trungntfx16444</display-name>
+	<welcome-file-list>
+		<welcome-file>Home</welcome-file>
+	</welcome-file-list>
+
+	<!-- CREATE SERVLET -->
+	<servlet>
+		<servlet-name>LoginController</servlet-name>
+		<servlet-class>Controller.LoginController</servlet-class>
+	</servlet>	
+
+	<servlet>
+		<servlet-name>LogoutController</servlet-name>
+		<servlet-class>Controller.LogoutController</servlet-class>
+	</servlet>	
+	
+	<servlet>
+		<servlet-name>HomeController</servlet-name>
+		<servlet-class>Controller.HomeController</servlet-class>
+	</servlet>	
+
+	<servlet>
+		<servlet-name>DetailController</servlet-name>
+		<servlet-class>Controller.DetailController</servlet-class>
+	</servlet>	
+	
+	<servlet>
+		<servlet-name>SearchController</servlet-name>
+		<servlet-class>Controller.SearchController</servlet-class>
+	</servlet>	
+
+	<servlet>
+		<servlet-name>AddToCartController</servlet-name>
+		<servlet-class>Controller.AddToCartController</servlet-class>
+	</servlet>	
+	
+	<servlet>
+		<servlet-name>RegisterController</servlet-name>
+		<servlet-class>Controller.RegisterController</servlet-class>
+	</servlet>	
+
+	<servlet>
+		<servlet-name>OrderController</servlet-name>
+		<servlet-class>Controller.OrderController</servlet-class>
+	</servlet>	
+
+	<servlet>
+		<servlet-name>HistoryController</servlet-name>
+		<servlet-class>Controller.HistoryController</servlet-class>
+	</servlet>	
+
+	<servlet>
+		<servlet-name>OrderDetailController</servlet-name>
+		<servlet-class>Controller.OrderDetailController</servlet-class>
+	</servlet>	
+
+	<!-- MAPPING -->
+		
+	<servlet-mapping>
+		<servlet-name>LoginController</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>LogoutController</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>HomeController</servlet-name>
+		<url-pattern>/Home</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>DetailController</servlet-name>
+		<url-pattern>/Detail</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>SearchController</servlet-name>
+		<url-pattern>/Search</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>AddToCartController</servlet-name>
+		<url-pattern>/Cart</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>RegisterController</servlet-name>
+		<url-pattern>/Register</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>OrderController</servlet-name>
+		<url-pattern>/Order</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>HistoryController</servlet-name>
+		<url-pattern>/History</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>OrderDetailController</servlet-name>
+		<url-pattern>/OrderDetail</url-pattern>
+	</servlet-mapping>
+
+	<!-- SESSION CONFIG -->
+	<session-config>
+		<session-timeout>
+			5000
+		</session-timeout>	
+	</session-config>
+
+</web-app>
