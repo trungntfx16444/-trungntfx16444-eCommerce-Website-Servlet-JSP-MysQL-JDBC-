@@ -51,7 +51,7 @@
 
 					<div class="mb-3">
 						<input type="text" class="form-control" id="exampleInputUsername"
-							placeholder="Username" name="username" value="<%= remember.equals("1")&& error == null ? user : ""%>">
+							placeholder="Email" name="username" value="<%= remember.equals("1")&& error == null ? user : ""%>">
 					</div>
 					<div class="mb-3">
 						<input type="password" class="form-control"
