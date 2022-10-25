@@ -3,11 +3,11 @@ package context;
 import java.sql.*;
 
 public class DBContext {
-	private String dbDriver = "com.mysql.jdbc.Driver";
-	private String dbUrl = "jdbc:mysql://remotemysql.com:3306/";
-	private String dbName = "0r9eJFc8Yt";
-	private String user = "0r9eJFc8Yt";
-	private String pass = "iPM1U8eKTe";
+	private String dbDriver = "com.mysql.cj.jdbc.Driver";
+	private String dbUrl = "jdbc:mysql://sql6.freemysqlhosting.net:3306/";
+	private String dbName = "sql6529007";
+	private String user = "sql6529007";
+	private String pass = "hbR7xlp53M";
 	
 	public Connection getConnection() {
 		Connection conn = null;
